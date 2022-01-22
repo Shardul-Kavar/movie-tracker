@@ -1,0 +1,29 @@
+.moviecard__contents {
+  display: grid;
+  grid-template-columns: 33% auto;
+}
+
+.moviecard {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 25px;
+  box-shadow: 5px 5px 10px gray;
+  padding: 10px;
+  max-width: 600px;
+}
+
+.movieCard {
+  margin: 0px 20px 20px 0px;
+  transition: scale 250ms;
+}
+
+.movieCard:hover {
+  scale: 1.08;
+}
+
+.movieCard__textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

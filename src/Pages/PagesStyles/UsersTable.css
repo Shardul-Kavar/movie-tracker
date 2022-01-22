@@ -1,0 +1,10 @@
+.usersTable__icons {
+  display: flex;
+  height: 65px;
+  align-items: center;
+  justify-content: center;
+}
+
+.userIsBlocked {
+  color: red !important;
+}

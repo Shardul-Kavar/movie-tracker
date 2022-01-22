@@ -1,0 +1,90 @@
+.watchlist__movieCards {
+  display: grid;
+  grid-template-columns: auto;
+  overflow-y: scroll;
+  padding: 10px;
+  margin: 20px;
+  scrollbar-width: none;
+}
+@media only screen and (min-width: 1500px) {
+  .watchlist__movieCards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .watchlist__movieCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .watchlist__movieCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .watchlist__movieCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.watchlist__poster {
+  object-fit: contain;
+  height: 350px;
+}
+
+/* .watchlist__poster:hover {
+  transform: scale(1.18);
+} */
+
+.watchlist__container {
+  display: grid;
+  /* padding-top: 55px; */
+  grid-template-columns: 150px auto;
+}
+
+.watchlist__content {
+  height: 100vh;
+}
+
+.watchlist__showUsers {
+  margin: 3vh;
+  padding: 4vh;
+  background-color: #f8f9fa;
+  max-width: 300px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.watchlist__movieCardFooter {
+  display: "flex";
+  justify-content: space-evenly;
+  word-break: keep-all;
+  align-items: center;
+  overflow-wrap: normal;
+  margin: "0";
+  padding: "0";
+}
+
+.watchlist__movieCard {
+  margin: 0px 20px 20px 0px;
+  transition: scale 250ms;
+}
+
+.watchlist__movieCard:hover {
+  scale: 1.09;
+}
+
+.watchlsit__movieCard__overview {
+  height: 100px;
+  overflow: hidden;
+}

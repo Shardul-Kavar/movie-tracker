@@ -1,0 +1,40 @@
+.utable__container {
+  display: grid;
+  /* padding-top: 55px; */
+  padding-bottom: 55px;
+  grid-template-columns: 150px auto;
+  position: fixed;
+  width: 100%;
+}
+
+.utable__content {
+  display: flex;
+  margin: auto;
+  padding-bottom: 3vh;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  /* -ms-overflow-style: none; */
+  scrollbar-width: thin;
+  /* overflow-x: scroll; */
+}
+
+.utable__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 4vh;
+}
+
+.utable__showUsers {
+  margin: 10px;
+  padding: 20px 20px 250px 20px;
+  margin-right: 100px;
+  height: 100vh;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+}

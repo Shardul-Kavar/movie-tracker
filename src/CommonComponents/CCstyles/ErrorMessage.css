@@ -1,0 +1,9 @@
+.errorMessage {
+  display: block;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.successMessage {
+  display: none;
+}
