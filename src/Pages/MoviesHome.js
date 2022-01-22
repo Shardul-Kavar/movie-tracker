@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import AllMovies from "../../CommonComponents/AllMovies";
-import Nav from "../../CommonComponents/Nav";
-import Sidebar from "../../CommonComponents/Sidebar";
-import "../PagesStyles/MoviesHome.css";
+import AllMovies from "../CommonComponents/AllMovies";
+import Nav from "../CommonComponents/Nav";
+import Sidebar from "../CommonComponents/Sidebar";
+import "./PagesStyles/MoviesHome.css";
 
 function MoviesHome() {
   const navigate = useNavigate();
@@ -11,7 +11,9 @@ function MoviesHome() {
   const [watchlist, setWatchlist] = useState([]);
 
   useEffect(() => {
-    !JSON.parse(localStorage.getItem("currentUser"))
+    !localStorage.getItem("currentUser")
+      ? navigate("/login")
+      : !JSON.parse(localStorage.getItem("currentUser"))
       ? navigate("/login")
       : setCurrentUser(JSON.parse(localStorage.getItem("currentUser")));
   }, []);
@@ -36,10 +38,6 @@ function MoviesHome() {
       .then((response) => response.json())
       .then((data) => setWatchlist([...watchlist, data]))
       .error((error) => console.log(error));
-  }
-
-  function handleWatchlist(moviesInWl) {
-    // console.log(moviesInWl);
   }
 
   function removeBookmark(movie) {
@@ -69,7 +67,6 @@ function MoviesHome() {
           <Sidebar currentUser={currentUser} />
           <div className="moviesHome__content">
             <AllMovies
-              handleWatchlist={handleWatchlist}
               bookmarkThis={bookmarkThis}
               removeBookmark={removeBookmark}
               watchlist={watchlist}

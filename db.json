@@ -201,34 +201,6 @@
     {
       "userid": 8239236,
       "movieDetail": {
-        "adult": false,
-        "backdrop_path": "/ur19n7Zabzf7wfhK4MrlFDJiZPI.jpg",
-        "genre_ids": [
-          16,
-          10751,
-          14,
-          35,
-          12
-        ],
-        "original_language": "en",
-        "original_title": "Hotel Transylvania: Transformania",
-        "poster_path": "/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg",
-        "id": 585083,
-        "video": false,
-        "vote_average": 7.8,
-        "overview": "When Van Helsing's mysterious invention, the \"Monsterfication Ray,\" goes haywire, Drac and his monster pals are all transformed into humans, and Johnny becomes a monster. In their new mismatched bodies, Drac and Johnny must team up and race across the globe to find a cure before it's too late, and before they drive each other crazy.",
-        "release_date": "2022-01-14",
-        "vote_count": 770,
-        "title": "Hotel Transylvania: Transformania",
-        "popularity": 10200.442,
-        "media_type": "movie"
-      },
-      "movieId": 585083,
-      "id": 17
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
         "overview": "Plagued by strange memories, Neo's life takes an unexpected turn when he finds himself back inside the Matrix.",
         "release_date": "2021-12-16",
         "adult": false,
@@ -666,6 +638,56 @@
       },
       "movieId": 624860,
       "id": 38
+    },
+    {
+      "userid": 8239238,
+      "movieDetail": {
+        "backdrop_path": "/35SS0nlBhu28cSe7TiO3ZiywZhl.jpg",
+        "first_air_date": "2018-05-02",
+        "genre_ids": [
+          10759,
+          18
+        ],
+        "id": 77169,
+        "name": "Cobra Kai",
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Cobra Kai",
+        "overview": "This Karate Kid sequel series picks up 30 years after the events of the 1984 All Valley Karate Tournament and finds Johnny Lawrence on the hunt for redemption by reopening the infamous Cobra Kai karate dojo. This reignites his old rivalry with the successful Daniel LaRusso, who has been working to maintain the balance in his life without mentor Mr. Miyagi.",
+        "popularity": 1641.388,
+        "poster_path": "/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
+        "vote_average": 8.1,
+        "vote_count": 4132
+      },
+      "movieId": 77169,
+      "id": 39
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "backdrop_path": "/35SS0nlBhu28cSe7TiO3ZiywZhl.jpg",
+        "first_air_date": "2018-05-02",
+        "genre_ids": [
+          10759,
+          18
+        ],
+        "id": 77169,
+        "name": "Cobra Kai",
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Cobra Kai",
+        "overview": "This Karate Kid sequel series picks up 30 years after the events of the 1984 All Valley Karate Tournament and finds Johnny Lawrence on the hunt for redemption by reopening the infamous Cobra Kai karate dojo. This reignites his old rivalry with the successful Daniel LaRusso, who has been working to maintain the balance in his life without mentor Mr. Miyagi.",
+        "popularity": 1641.388,
+        "poster_path": "/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
+        "vote_average": 8.1,
+        "vote_count": 4132
+      },
+      "movieId": 77169,
+      "id": 40
     }
   ]
 }

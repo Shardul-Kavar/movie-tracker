@@ -1,4 +1,4 @@
-import { BookmarkAdded, KeyboardReturn } from "@mui/icons-material";
+import { BookmarkAdded } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import Nav from "../CommonComponents/Nav";
@@ -11,31 +11,56 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-function UserWatchlist() {
+function Watchlist() {
   const navigate = useNavigate();
   const [currentUser, setCurrentUser] = useState({});
   const [watchlist, setWatchlist] = useState([]);
   const base_url = "https://image.tmdb.org/t/p/original/";
   const [thisUser, setThisUser] = useState({ username: "user" });
   const { state } = useLocation();
-  console.log(state);
+
+  function removeBookmark(movie) {
+    // console.log(movie)
+    setWatchlist(
+      watchlist.filter((m) => {
+        return m.movieId !== movie.movieDetail.id;
+      })
+    );
+    fetch(
+      `http://localhost:3001/watchlist/?userid=${currentUser.id}&movieId=${movie.MovieId}`
+    )
+      .then((response) => response.json())
+      .then((data) =>
+        data.map((m) => {
+          fetch(`http://localhost:3001/watchlist/${m.id}`, {
+            method: "DELETE",
+          });
+        })
+      );
+  }
 
   useEffect(() => {
     !JSON.parse(localStorage.getItem("currentUser"))
       ? navigate("/login")
       : setCurrentUser(JSON.parse(localStorage.getItem("currentUser")));
-
-    fetch(`http://localhost:3001/watchlist/?userid=${state}`)
-      .then((response) => response.json())
-      .then((data) => setWatchlist(data));
-    fetch(`http://localhost:3001/users/?id=${state}`)
-      .then((response) => response.json())
-      .then((data) => setThisUser(data[0]));
+    state &&
+      fetch(`http://localhost:3001/users/?id=${state}`)
+        .then((response) => response.json())
+        .then((data) => setThisUser(data[0]));
   }, []);
+
+  useEffect(() => {
+    currentUser && currentUser.isAdmin
+      ? fetch(`http://localhost:3001/watchlist/?userid=${state}`)
+          .then((response) => response.json())
+          .then((data) => setWatchlist(data))
+      : fetch(`http://localhost:3001/watchlist/?userid=${currentUser.id}`)
+          .then((response) => response.json())
+          .then((data) => setWatchlist(data));
+  }, [currentUser]);
 
   const handleClick = (movie) => {
     navigate("/moviepage", { state: { movie, base_url } });
-    // console.log(movie);
   };
 
   return (
@@ -45,16 +70,24 @@ function UserWatchlist() {
         <div className="watchlist__container">
           <Sidebar currentUser={currentUser} />
           <div className="watchlist__content">
-            <h1>{thisUser.username}'s watchlist</h1>
+            {currentUser.isAdmin ? (
+              <h1>{`${thisUser.username}'s Watchlist`}</h1>
+            ) : (
+              <h1>My Watchlist</h1>
+            )}
             <div className="watchlist__movieCards">
               {watchlist.map((movie) => {
                 return (
-                  <Card sx={{ maxWidth: 345 }} className="watchlist__movieCard">
+                  <Card
+                    sx={{ maxWidth: 345 }}
+                    className="watchlist__movieCard"
+                    // onClick={() => console.log(movie)}
+                    onClick={() => handleClick(movie.movieDetail)}
+                  >
                     <CardMedia
                       component="img"
                       height="140"
                       key={movie.id}
-                      onClick={() => handleClick(movie.movieDetail)}
                       className="watchlist__poster"
                       src={`${base_url}${movie.movieDetail.poster_path}`}
                       alt={movie.movieDetail.name}
@@ -76,6 +109,16 @@ function UserWatchlist() {
                           {movie.movieDetail.overview}
                         </Typography>
                       </CardContent>
+                      {!currentUser.isAdmin && (
+                        <CardActions>
+                          <Button
+                            size="small"
+                            onClick={() => removeBookmark(movie)}
+                          >
+                            <BookmarkAdded style={{ cursor: "pointer" }} />
+                          </Button>
+                        </CardActions>
+                      )}
                     </div>
                   </Card>
                 );
@@ -88,4 +131,4 @@ function UserWatchlist() {
   );
 }
 
-export default UserWatchlist;
+export default Watchlist;

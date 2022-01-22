@@ -2,25 +2,18 @@ import React, { useEffect } from "react";
 import requesets from "./requests";
 import Row from "./Row";
 
-function AllMovies({
-  handleWatchlist,
-  bookmarkThis,
-  removeBookmark,
-  watchlist,
-}) {
+function AllMovies({ bookmarkThis, removeBookmark, watchlist }) {
   return (
     <div>
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requesets.fetchNetflixOriginals}
         isLargeRow
-        handleWatchlist={handleWatchlist}
         bookmarkThis={bookmarkThis}
         removeBookmark={removeBookmark}
         watchlist={watchlist}
       />
       <Row
-        handleWatchlist={handleWatchlist}
         bookmarkThis={bookmarkThis}
         removeBookmark={removeBookmark}
         fetchUrl={requesets.fetchTrending}
@@ -28,7 +21,6 @@ function AllMovies({
         title="Trending Now"
       />
       <Row
-        handleWatchlist={handleWatchlist}
         bookmarkThis={bookmarkThis}
         removeBookmark={removeBookmark}
         fetchUrl={requesets.fetchTrending}
@@ -37,7 +29,6 @@ function AllMovies({
         fetchUrl={requesets.fetchTopRated}
       />
       <Row
-        handleWatchlist={handleWatchlist}
         bookmarkThis={bookmarkThis}
         removeBookmark={removeBookmark}
         watchlist={watchlist}
@@ -45,7 +36,6 @@ function AllMovies({
         fetchUrl={requesets.fetchActionMovies}
       />
       <Row
-        handleWatchlist={handleWatchlist}
         bookmarkThis={bookmarkThis}
         removeBookmark={removeBookmark}
         watchlist={watchlist}
@@ -53,7 +43,6 @@ function AllMovies({
         fetchUrl={requesets.fetchComedyMovies}
       />
       <Row
-        handleWatchlist={handleWatchlist}
         bookmarkThis={bookmarkThis}
         removeBookmark={removeBookmark}
         watchlist={watchlist}
@@ -61,7 +50,6 @@ function AllMovies({
         fetchUrl={requesets.fetchHorrorMovies}
       />
       <Row
-        handleWatchlist={handleWatchlist}
         bookmarkThis={bookmarkThis}
         removeBookmark={removeBookmark}
         watchlist={watchlist}
@@ -69,7 +57,6 @@ function AllMovies({
         fetchUrl={requesets.fetchRomanceMovies}
       />
       <Row
-        handleWatchlist={handleWatchlist}
         bookmarkThis={bookmarkThis}
         removeBookmark={removeBookmark}
         watchlist={watchlist}

@@ -1,8 +1,6 @@
 import { BookmarkAdd, BookmarkAdded } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import CircularProgress from "@mui/material/CircularProgress";
-import Box from "@mui/material/Box";
 import "./CCstyles/MovieCard.css";
 
 function MovieCard({
@@ -10,22 +8,14 @@ function MovieCard({
   currentUser,
   base_url,
   isLargeRow,
-  handleWatchlist,
   bookmarkThis,
   removeBookmark,
   watchlist,
 }) {
   const navigate = useNavigate();
-  // useEffect(() => {
-  // watchlist.filter((e) => {
-  //   return e.movieId === movie.id;
-  // }).length !== 0 && console.log(true);
-  // console.log(watchlist);
-  // }, []);
 
   function handleClick(movie) {
-    console.log(watchlist);
-    // navigate("/moviepage", { state: { movie, base_url } });
+    navigate("/moviepage", { state: { movie, base_url } });
   }
 
   return (

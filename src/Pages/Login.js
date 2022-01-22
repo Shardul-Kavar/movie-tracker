@@ -24,25 +24,24 @@ function Login() {
   }
 
   useEffect(() => {
-    currentUser.id && (currentUser.isAdmin ? navigate("/dashboard", { state: currentUser }) : navigate("/mydashboard", { state: currentUser }));
-    currentUser.id && localStorage.setItem("currentUser", JSON.stringify(currentUser));
+    currentUser.id &&
+      localStorage.setItem("currentUser", JSON.stringify(currentUser));
+    currentUser.id && navigate("/", { state: currentUser });
   }, [currentUser]);
 
   function loginSuccessfull(e) {
     if (e.isBlocked === true) {
       window.alert("You are Blocked!");
     } else setCurrentUser(e);
-    // navigate("/dashboard", { state: currentUser });
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     adminData.map((e) => {
-      return e.username + e.password === tempAdmin.username + tempAdmin.password ? loginSuccessfull(e) : setErrorCheck(true);
-      // localStorage.setItem("adminKey", [JSON.stringify(e.key)]);
+      return e.username + e.password === tempAdmin.username + tempAdmin.password
+        ? loginSuccessfull(e)
+        : setErrorCheck(true);
     });
-
-    // localStorage.getItem("adminKey") && navigate("/dashboard");
   }
 
   return (
@@ -57,13 +56,17 @@ function Login() {
               size="small"
               type="text"
               placeholder="Enter Your Username"
-              onChange={(e) => setTempAdmin({ ...tempAdmin, username: e.target.value })}
+              onChange={(e) =>
+                setTempAdmin({ ...tempAdmin, username: e.target.value })
+              }
               onBlur={() => setErrorCheck(false)}
               required
             />
             {tempAdmin.username.length === 0
               ? errorCheck && <NewError error={true} name="Username" />
-              : errorCheck && <NewCorrectionError error={true} name="username" />}
+              : errorCheck && (
+                  <NewCorrectionError error={true} name="username" />
+                )}
           </div>
 
           <div className="mb-3" controlId="formBasicPassword">
@@ -72,18 +75,24 @@ function Login() {
               size="small"
               type="password"
               placeholder="Enter Your Password"
-              onChange={(e) => setTempAdmin({ ...tempAdmin, password: e.target.value })}
+              onChange={(e) =>
+                setTempAdmin({ ...tempAdmin, password: e.target.value })
+              }
               onBlur={() => setErrorCheck(false)}
               required
             />
             {tempAdmin.password.length === 0
               ? errorCheck && <NewError error={true} name="Password" />
-              : errorCheck && <NewCorrectionError error={true} name="password" />}
+              : errorCheck && (
+                  <NewCorrectionError error={true} name="password" />
+                )}
           </div>
-          {/* <Form.Group className="mb-3" controlId="formBasicCheckbox" required>
-            <Form.Check type="checkbox" label="I want to Login" />
-          </Form.Group> */}
-          <Button variant="contained" style={{ marginTop: "20px" }} type="submit" onMouseOver={() => setErrorCheck(false)}>
+          <Button
+            variant="contained"
+            style={{ marginTop: "20px" }}
+            type="submit"
+            onMouseOver={() => setErrorCheck(false)}
+          >
             Log In
           </Button>
         </div>
@@ -93,5 +102,3 @@ function Login() {
 }
 
 export default Login;
-
-// --------------------------------------------------------------------------------------------------------------

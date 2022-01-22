@@ -16,7 +16,6 @@ function Row({
   title,
   fetchUrl,
   isLargeRow,
-  handleWatchlist,
   bookmarkThis,
   removeBookmark,
   watchlist,
@@ -24,10 +23,6 @@ function Row({
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const base_url = "https://image.tmdb.org/t/p/original/";
   const [movies, setMovies] = useState([]);
-  // const navigate = useNavigate();
-  // const [trailerUrl, setTrailerUrl] = useState("");
-
-  // snippet of code which runs based on a specific condition/variable
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(fetchUrl);
@@ -44,7 +39,6 @@ function Row({
         {movies.map((movie) => (
           <MovieCard
             currentUser={currentUser}
-            handleWatchlist={handleWatchlist}
             bookmarkThis={bookmarkThis}
             removeBookmark={removeBookmark}
             base_url={base_url}

@@ -14,7 +14,8 @@ function UsersTable() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    JSON.parse(localStorage.getItem("currentUser")).isAdmin &&
+    localStorage.getItem("currentUser") &&
+      JSON.parse(localStorage.getItem("currentUser")).isAdmin &&
       setIsThisAdmin(true);
   }, []);
 
@@ -44,7 +45,7 @@ function UsersTable() {
 
   function showUserWatchlist(u) {
     // console.log(u.id);
-    navigate("/adminwatchlist", { state: u.id });
+    navigate("/watchlist", { state: u.id });
   }
 
   const usertable = adminData.map((u, index) => {

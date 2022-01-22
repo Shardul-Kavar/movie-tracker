@@ -14,9 +14,11 @@ function UsersShow() {
   const [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
-    !JSON.parse(localStorage.getItem("currentUser")).isAdmin &&
-      navigate("/login");
-    setCurrentUser(JSON.parse(localStorage.getItem("currentUser")));
+    !localStorage.getItem("currentUser")
+      ? navigate("/login")
+      : !JSON.parse(localStorage.getItem("currentUser")).isAdmin
+      ? navigate("/login")
+      : setCurrentUser(JSON.parse(localStorage.getItem("currentUser")));
   }, []);
 
   return (
