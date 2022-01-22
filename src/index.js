@@ -12,6 +12,7 @@ import UserDashboard from "./Pages/UsersPages/UserDashboard";
 import UserWatchlist from "./Pages/UsersPages/UserWatchlist";
 import MoviesHome from "./Pages/UsersPages/MoviesHome";
 import MoviePage from "./CommonComponents/MoviePage";
+import CommonWatchlist from "./Pages/UsersPages/CommonWatchlist";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,10 +24,12 @@ ReactDOM.render(
         <Route path={"/dashboard"} element={<Dashboard />} />
         <Route path={"/users"} element={<UsersShow />} />
         <Route path={"/mydashboard"} element={<UserDashboard />} />
-        <Route path={"/mywatchlist"} element={<UserWatchlist />} />
+        {/* <Route path={"/mywatchlist"} element={<UserWatchlist />} /> */}
+        <Route path={"/mywatchlist"} element={<CommonWatchlist />} />
         <Route path={"/movieslist"} element={<MoviesHome />} />
         <Route path={"/moviepage"} element={<MoviePage />} />
-        <Route path={"/adminwatchlist"} element={<AdminWatchlist />} />
+        {/* <Route path={"/adminwatchlist"} element={<AdminWatchlist />} /> */}
+        <Route path={"/adminwatchlist"} element={<CommonWatchlist />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
