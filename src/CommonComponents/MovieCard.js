@@ -28,7 +28,12 @@ function MovieCard({
           src={`${base_url}${
             isLargeRow ? movie.poster_path : movie.backdrop_path
           }`}
-          alt={movie.name}
+          alt={
+            movie.name ||
+            movie.original_name ||
+            movie.title ||
+            movie.original_title
+          }
         />
         <div
           className="movieCard__textContent"

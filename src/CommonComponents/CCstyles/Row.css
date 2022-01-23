@@ -6,11 +6,18 @@
   scrollbar-width: none;
 }
 
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
 .row_poster {
   object-fit: contain;
   max-height: 100px;
   margin-right: 10px;
   transition: transform 250ms;
+}
+
+.row__title {
+  color: #1976d2;
 }
 
 .row_poster:hover {

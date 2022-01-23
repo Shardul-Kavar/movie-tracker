@@ -16,6 +16,17 @@
   height: 150px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1976d2;
+  font-weight: 600;
+  font-size: x-large;
+}
+.dashboard__showUsers * {
+  margin: 10px;
+}
+.dashboard__hr {
+  width: 100%;
 }

@@ -90,16 +90,14 @@ function SignUp() {
 
   return (
     <div className="signup">
-      <div className="signup__nav">
-        <Nav />
-      </div>
-      <form
-        noValidate
-        className="signup__form"
-        onSubmit={(e) => handleSubmit(e)}
-      >
-        <h1 style={{ margin: "0px" }}>Sign Up</h1>
-        <div className="signup__card">
+      <Nav />
+      <div className="signup__card">
+        <form
+          noValidate
+          className="signup__form"
+          onSubmit={(e) => handleSubmit(e)}
+        >
+          <h1 style={{ margin: "0px" }}>Sign Up</h1>
           <div>
             <h5>Name</h5>
             <TextField
@@ -242,8 +240,8 @@ function SignUp() {
           >
             Sign Up
           </Button>
-        </div>
-      </form>
+        </form>
+      </div>
 
       <div
         style={{ position: "fixed", bottom: "0" }}

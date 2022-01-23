@@ -26,7 +26,6 @@ function AllMovies({ bookmarkThis, removeBookmark, watchlist }) {
         fetchUrl={requesets.fetchTrending}
         watchlist={watchlist}
         title="Top Rated"
-        fetchUrl={requesets.fetchTopRated}
       />
       <Row
         bookmarkThis={bookmarkThis}

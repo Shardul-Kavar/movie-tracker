@@ -1,0 +1,15 @@
+.login__card {
+  width: 80vw;
+  max-width: 600px;
+  padding: 3vh 3vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login__card * {
+  margin: 5px;
+}

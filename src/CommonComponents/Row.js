@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 // import YouTube from "react-youtube";
 import axios from "./axios";
-import "./Row.css";
+import "./CCstyles/Row.css";
 // import movieTrailer from "movie-trailer";
 import { useNavigate } from "react-router";
 import {
@@ -34,7 +33,7 @@ function Row({
 
   return (
     <div className="row">
-      <h2>{title}</h2>
+      <h2 className="row__title">{title}</h2>
       <div className="row_posters">
         {movies.map((movie) => (
           <MovieCard

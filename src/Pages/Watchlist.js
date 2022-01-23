@@ -20,14 +20,13 @@ function Watchlist() {
   const { state } = useLocation();
 
   function removeBookmark(movie) {
-    // console.log(movie)
     setWatchlist(
       watchlist.filter((m) => {
         return m.movieId !== movie.movieDetail.id;
       })
     );
     fetch(
-      `http://localhost:3001/watchlist/?userid=${currentUser.id}&movieId=${movie.MovieId}`
+      `http://localhost:3001/watchlist?movieId=${movie.movieId}&userid=${currentUser.id}`
     )
       .then((response) => response.json())
       .then((data) =>
@@ -73,7 +72,7 @@ function Watchlist() {
             {currentUser.isAdmin ? (
               <h1>{`${thisUser.username}'s Watchlist`}</h1>
             ) : (
-              <h1>My Watchlist</h1>
+              <h1 className="watchlist__heading">My Watchlist</h1>
             )}
             <div className="watchlist__movieCards">
               {watchlist.map((movie) => {
@@ -82,7 +81,6 @@ function Watchlist() {
                     sx={{ maxWidth: 345 }}
                     className="watchlist__movieCard"
                     // onClick={() => console.log(movie)}
-                    onClick={() => handleClick(movie.movieDetail)}
                   >
                     <CardMedia
                       component="img"
@@ -91,10 +89,11 @@ function Watchlist() {
                       className="watchlist__poster"
                       src={`${base_url}${movie.movieDetail.poster_path}`}
                       alt={movie.movieDetail.name}
+                      onClick={() => handleClick(movie.movieDetail)}
                       style={{ cursor: "pointer" }}
                     />
-                    <div className="watchlist__movieCard__textContent">
-                      <CardContent>
+                    <div>
+                      <CardContent className="watchlist__movieCard__textContent">
                         <Typography gutterBottom variant="h5" component="div">
                           {movie.movieDetail.name ||
                             movie.movieDetail.original_name ||

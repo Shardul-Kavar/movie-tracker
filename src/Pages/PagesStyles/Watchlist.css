@@ -51,6 +51,11 @@
 
 .watchlist__content {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .watchlist__showUsers {
@@ -78,13 +83,18 @@
 .watchlist__movieCard {
   margin: 0px 20px 20px 0px;
   transition: scale 250ms;
+  height: 550px;
 }
 
 .watchlist__movieCard:hover {
   scale: 1.09;
 }
 
-.watchlsit__movieCard__overview {
-  height: 100px;
+.watchlist__movieCard__textContent {
+  height: 120px;
   overflow: hidden;
+}
+
+.watchlist__heading {
+  color: #1976d2;
 }

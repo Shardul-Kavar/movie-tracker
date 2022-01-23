@@ -49,7 +49,7 @@ function Login() {
       <Nav />
       <form noValidate className="login" onSubmit={(e) => handleSubmit(e)}>
         <div className="login__card">
-          <h3>Log In</h3>
+          <h1>Log In</h1>
           <div className="mb-3" controlId="formBasicUsername">
             <h4>Username</h4>
             <TextField

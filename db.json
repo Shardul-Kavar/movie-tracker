@@ -93,59 +93,6 @@
   },
   "watchlist": [
     {
-      "userid": 8239236,
-      "movieDetail": {
-        "adult": false,
-        "backdrop_path": "/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg",
-        "genre_ids": [
-          35,
-          28,
-          12,
-          878
-        ],
-        "id": 550988,
-        "original_language": "en",
-        "original_title": "Free Guy",
-        "overview": "A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline.",
-        "popularity": 732.389,
-        "poster_path": "/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg",
-        "release_date": "2021-08-11",
-        "title": "Free Guy",
-        "video": false,
-        "vote_average": 7.7,
-        "vote_count": 4632
-      },
-      "movieId": 550988,
-      "id": 5
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "backdrop_path": "/ikN8ABD9pXHuW4JFqTEHr3ae8rd.jpg",
-        "first_air_date": "2021-11-19",
-        "genre_ids": [
-          18,
-          80,
-          9648,
-          10765
-        ],
-        "id": 106651,
-        "name": "Hellbound",
-        "origin_country": [
-          "KR"
-        ],
-        "original_language": "ko",
-        "original_name": "지옥",
-        "overview": "Unearthly beings deliver bloody condemnations, sending individuals to hell and giving rise to a religious group founded on the idea of divine justice.",
-        "popularity": 440.21,
-        "poster_path": "/5NYdSAnDVIXePrSG2dznHdiibMk.jpg",
-        "vote_average": 7.6,
-        "vote_count": 415
-      },
-      "movieId": 106651,
-      "id": 7
-    },
-    {
       "userid": 8239238,
       "movieDetail": {
         "adult": false,
@@ -197,32 +144,6 @@
       },
       "movieId": 524434,
       "id": 11
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "overview": "Plagued by strange memories, Neo's life takes an unexpected turn when he finds himself back inside the Matrix.",
-        "release_date": "2021-12-16",
-        "adult": false,
-        "backdrop_path": "/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg",
-        "genre_ids": [
-          878,
-          28,
-          12
-        ],
-        "vote_count": 2346,
-        "original_language": "en",
-        "id": 624860,
-        "poster_path": "/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
-        "title": "The Matrix Resurrections",
-        "video": false,
-        "vote_average": 6.9,
-        "original_title": "The Matrix Resurrections",
-        "popularity": 2920.594,
-        "media_type": "movie"
-      },
-      "movieId": 624860,
-      "id": 20
     },
     {
       "userid": 8239236,
@@ -302,32 +223,6 @@
       },
       "movieId": 624860,
       "id": 24
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "adult": false,
-        "backdrop_path": "/3G1Q5xF40HkUBJXxt2DQgQzKTp5.jpg",
-        "genre_ids": [
-          16,
-          35,
-          10751,
-          14
-        ],
-        "id": 568124,
-        "original_language": "en",
-        "original_title": "Encanto",
-        "overview": "The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto. The magic of the Encanto has blessed every child in the family with a unique gift from super strength to the power to heal—every child except one, Mirabel. But when she discovers that the magic surrounding the Encanto is in danger, Mirabel decides that she, the only ordinary Madrigal, might just be her exceptional family's last hope.",
-        "popularity": 4832.255,
-        "poster_path": "/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
-        "release_date": "2021-11-24",
-        "title": "Encanto",
-        "video": false,
-        "vote_average": 7.8,
-        "vote_count": 3157
-      },
-      "movieId": 568124,
-      "id": 25
     },
     {
       "userid": 8239236,
@@ -667,27 +562,228 @@
     {
       "userid": 8239236,
       "movieDetail": {
-        "backdrop_path": "/35SS0nlBhu28cSe7TiO3ZiywZhl.jpg",
-        "first_air_date": "2018-05-02",
+        "adult": false,
+        "backdrop_path": "/voi88IfoNAykXAEd0zrnczNM8LF.jpg",
         "genre_ids": [
-          10759,
+          18,
+          36,
+          10749,
+          53
+        ],
+        "id": 454527,
+        "original_language": "fr",
+        "original_title": "Benedetta",
+        "overview": "A 17th-century nun becomes entangled in a forbidden lesbian affair with a novice. But it is Benedetta's shocking religious visions that threaten to shake the Church to its core.",
+        "popularity": 187.739,
+        "poster_path": "/3N39KDnL3d6eP6sGvERPRKyQ8PJ.jpg",
+        "release_date": "2021-07-09",
+        "title": "Benedetta",
+        "video": false,
+        "vote_average": 6.7,
+        "vote_count": 310
+      },
+      "movieId": 454527,
+      "id": 41
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "backdrop_path": "/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg",
+        "first_air_date": "2017-05-02",
+        "genre_ids": [
+          80,
           18
         ],
-        "id": 77169,
-        "name": "Cobra Kai",
+        "id": 71446,
+        "name": "Money Heist",
+        "origin_country": [
+          "ES"
+        ],
+        "original_language": "es",
+        "original_name": "La Casa de Papel",
+        "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+        "popularity": 535.628,
+        "poster_path": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+        "vote_average": 8.3,
+        "vote_count": 15914
+      },
+      "movieId": 71446,
+      "id": 42
+    },
+    {
+      "userid": 8239240,
+      "movieDetail": {
+        "backdrop_path": "/rcA17r3hfHtRrk3Xs3hXrgGeSGT.jpg",
+        "first_air_date": "2016-07-15",
+        "genre_ids": [
+          10765,
+          9648,
+          18
+        ],
+        "id": 66732,
+        "name": "Stranger Things",
         "origin_country": [
           "US"
         ],
         "original_language": "en",
-        "original_name": "Cobra Kai",
-        "overview": "This Karate Kid sequel series picks up 30 years after the events of the 1984 All Valley Karate Tournament and finds Johnny Lawrence on the hunt for redemption by reopening the infamous Cobra Kai karate dojo. This reignites his old rivalry with the successful Daniel LaRusso, who has been working to maintain the balance in his life without mentor Mr. Miyagi.",
-        "popularity": 1641.388,
-        "poster_path": "/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
-        "vote_average": 8.1,
-        "vote_count": 4132
+        "original_name": "Stranger Things",
+        "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+        "popularity": 282.062,
+        "poster_path": "/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
+        "vote_average": 8.6,
+        "vote_count": 9285
       },
-      "movieId": 77169,
-      "id": 40
+      "movieId": 66732,
+      "id": 43
+    },
+    {
+      "userid": 8239240,
+      "movieDetail": {
+        "backdrop_path": "/gLACGQiS8kRP2hDnzdmIYo2uRRc.jpg",
+        "first_air_date": "2015-04-10",
+        "genre_ids": [
+          80,
+          18,
+          10759
+        ],
+        "id": 61889,
+        "name": "Marvel's Daredevil",
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Marvel's Daredevil",
+        "overview": "Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.",
+        "popularity": 270.218,
+        "poster_path": "/QWbPaDxiB6LW2LjASknzYBvjMj.jpg",
+        "vote_average": 8,
+        "vote_count": 2909
+      },
+      "movieId": 61889,
+      "id": 44
+    },
+    {
+      "userid": 8239240,
+      "movieDetail": {
+        "id": 85552,
+        "original_language": "en",
+        "original_name": "Euphoria",
+        "origin_country": [
+          "US"
+        ],
+        "name": "Euphoria",
+        "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+        "vote_count": 5632,
+        "first_air_date": "2019-06-16",
+        "vote_average": 8.4,
+        "backdrop_path": "/oKt4J3TFjWirVwBqoHyIvv5IImd.jpg",
+        "poster_path": "/jtnfNzqZwN4E32FGGxx1YZaBWWf.jpg",
+        "genre_ids": [
+          18
+        ],
+        "popularity": 3087.788,
+        "media_type": "tv"
+      },
+      "movieId": 85552,
+      "id": 45
+    },
+    {
+      "userid": 8239240,
+      "movieDetail": {
+        "release_date": "2021-09-15",
+        "adult": false,
+        "backdrop_path": "/jYEW5xZkZk2WTrdbMGAPFuBqbDc.jpg",
+        "genre_ids": [
+          878,
+          12
+        ],
+        "id": 438631,
+        "original_language": "en",
+        "original_title": "Dune",
+        "poster_path": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+        "vote_count": 5574,
+        "video": false,
+        "vote_average": 7.9,
+        "title": "Dune",
+        "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
+        "popularity": 775.129,
+        "media_type": "movie"
+      },
+      "movieId": 438631,
+      "id": 46
+    },
+    {
+      "userid": 8239241,
+      "movieDetail": {
+        "adult": false,
+        "backdrop_path": "/lV3UFPPxDIPelh46G9oySXN9Mcz.jpg",
+        "genre_ids": [
+          10749,
+          18
+        ],
+        "id": 744275,
+        "original_language": "en",
+        "original_title": "After We Fell",
+        "overview": "Just as Tessa's life begins to become unglued, nothing is what she thought it would be. Not her friends nor her family. The only person that she should be able to rely on is Hardin, who is furious when he discovers the massive secret that she's been keeping. Before Tessa makes the biggest decision of her life, everything changes because of revelations about her family.",
+        "popularity": 590.451,
+        "poster_path": "/dU4HfnTEJDf9KvxGS9hgO7BVeju.jpg",
+        "release_date": "2021-09-01",
+        "title": "After We Fell",
+        "video": false,
+        "vote_average": 7.2,
+        "vote_count": 1367
+      },
+      "movieId": 744275,
+      "id": 47
+    },
+    {
+      "userid": 8239241,
+      "movieDetail": {
+        "adult": false,
+        "backdrop_path": "/o2OSpKzXuB1edCDyVC2MXAxXwyJ.jpg",
+        "genre_ids": [
+          10749,
+          27,
+          53
+        ],
+        "id": 633802,
+        "original_language": "ru",
+        "original_title": "Приворот. Чёрное венчание",
+        "overview": "Terror strikes when a heartbroken woman uses black magic to get her husband back.",
+        "popularity": 496.72,
+        "poster_path": "/2AbGdSGlU6CpiV3lswHUgE5CdAA.jpg",
+        "release_date": "2021-02-11",
+        "title": "Dark Spell",
+        "video": false,
+        "vote_average": 7,
+        "vote_count": 61
+      },
+      "movieId": 633802,
+      "id": 48
+    },
+    {
+      "userid": 8239241,
+      "movieDetail": {
+        "adult": false,
+        "backdrop_path": "/poLzOfMBc2S4AroQPtzlaPRdEwn.jpg",
+        "genre_ids": [
+          10749,
+          18
+        ],
+        "id": 763148,
+        "original_language": "en",
+        "original_title": "Time Is Up",
+        "overview": "Vivien, an accomplished student with a passion for physics, and Roy, a troubled young man, are involved in an accident that forces them to reclaim their lives one minute at the time.",
+        "popularity": 460.089,
+        "poster_path": "/dxWHyMY4HoXH8LiEhYlga2OtK5B.jpg",
+        "release_date": "2021-09-09",
+        "title": "Time Is Up",
+        "video": false,
+        "vote_average": 6.4,
+        "vote_count": 165
+      },
+      "movieId": 763148,
+      "id": 49
     }
   ]
 }
