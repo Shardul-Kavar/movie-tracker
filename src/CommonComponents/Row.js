@@ -40,6 +40,7 @@ function Row({
             currentUser={currentUser}
             bookmarkThis={bookmarkThis}
             removeBookmark={removeBookmark}
+            fetchUrl={fetchUrl}
             base_url={base_url}
             watchlist={watchlist}
             movie={movie}

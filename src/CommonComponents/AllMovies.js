@@ -17,19 +17,16 @@ function AllMovies({ bookmarkThis, removeBookmark, watchlist }) {
   return (
     <div>
       <>
-        {rowCatagories.map((row) => {
-          console.log(row.title === "Trending Now");
-          return (
-            <Row
-              isLargeRow={row.title === "NETFLIX ORIGINALS"}
-              title={row.title}
-              fetchUrl={row.url}
-              bookmarkThis={bookmarkThis}
-              removeBookmark={removeBookmark}
-              watchlist={watchlist}
-            />
-          );
-        })}
+        {rowCatagories.map((row) => (
+          <Row
+            isLargeRow={row.title === "NETFLIX ORIGINALS"}
+            title={row.title}
+            fetchUrl={row.url}
+            bookmarkThis={bookmarkThis}
+            removeBookmark={removeBookmark}
+            watchlist={watchlist}
+          />
+        ))}
       </>
     </div>
   );
