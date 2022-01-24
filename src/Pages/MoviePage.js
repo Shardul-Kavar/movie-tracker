@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -8,17 +8,25 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { useLocation, useNavigate } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import "../CommonComponents/CCstyles/MovieCard.css";
 
 export default function MoviePage() {
-  const { state } = useLocation();
+  const base_url = "https://image.tmdb.org/t/p/original/";
+  const params = useParams();
   const navigate = useNavigate();
+  const [thisMovie, setThisMovie] = useState({});
 
-  !state && navigate("/loign");
   useEffect(() => {
     !localStorage.getItem("currentUser") && navigate("/login");
-  }, [navigate, state]);
+  }, [navigate]);
+
+  useEffect(() => {
+    fetch(
+      `https://api.themoviedb.org/3/${params.type}/${params.movieId}?api_key=ed03bffe513a5d137b3a0965c3b0d9c0`
+    ).then((response) => response.json().then((data) => setThisMovie(data)));
+  }, []);
+  console.log(thisMovie);
 
   return (
     <Card
@@ -37,14 +45,9 @@ export default function MoviePage() {
             <MoreVertIcon />
           </IconButton>
         }
-        title={
-          state?.movie.name ||
-          state?.movie.original_name ||
-          state?.movie.title ||
-          state?.movie.original_title
-        }
+        title={thisMovie.original_title}
         subheader={`release date : ${
-          state?.movie.first_air_date || state?.movie.release_date
+          thisMovie?.first_air_date || thisMovie?.release_date
         }`}
       />
       <div className="moviecard__contents">
@@ -52,16 +55,16 @@ export default function MoviePage() {
           <CardMedia
             component="img"
             height="auto"
-            image={`${state?.base_url}${
-              state?.movie.poster_path || state?.movie.backdrop_path
+            image={`${base_url}${
+              thisMovie.poster_path || thisMovie.backdrop_path
             }`}
-            alt={state?.movie.original_name}
+            alt={thisMovie.original_name}
           />
         </div>
         <div style={{ padding: "20px" }}>
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              {state?.movie.overview}
+              {thisMovie.overview}
             </Typography>
           </CardContent>
         </div>

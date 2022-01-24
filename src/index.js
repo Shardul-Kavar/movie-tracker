@@ -21,7 +21,7 @@ ReactDOM.render(
         <Route path={"/users"} element={<UsersShow />} />
         <Route path={"/watchlist"} element={<Watchlist />} />
         <Route path={"/movieslist"} element={<MoviesHome />} />
-        <Route path={"/moviepage"} element={<MoviePage />} />
+        <Route path={"/moviepage/:type/:movieId"} element={<MoviePage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

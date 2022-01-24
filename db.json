@@ -784,6 +784,56 @@
       },
       "movieId": 763148,
       "id": 49
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "backdrop_path": "/35SS0nlBhu28cSe7TiO3ZiywZhl.jpg",
+        "first_air_date": "2018-05-02",
+        "genre_ids": [
+          10759,
+          18
+        ],
+        "id": 77169,
+        "name": "Cobra Kai",
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Cobra Kai",
+        "overview": "This Karate Kid sequel series picks up 30 years after the events of the 1984 All Valley Karate Tournament and finds Johnny Lawrence on the hunt for redemption by reopening the infamous Cobra Kai karate dojo. This reignites his old rivalry with the successful Daniel LaRusso, who has been working to maintain the balance in his life without mentor Mr. Miyagi.",
+        "popularity": 1471.735,
+        "poster_path": "/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
+        "vote_average": 8.2,
+        "vote_count": 4156
+      },
+      "movieId": 77169,
+      "id": 50
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "backdrop_path": "/2Gj7RRFnM4dWVp9p5RpN09E67PJ.jpg",
+        "first_air_date": "2016-06-02",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 67166,
+        "name": "El marginal",
+        "origin_country": [
+          "AR"
+        ],
+        "original_language": "es",
+        "original_name": "El marginal",
+        "overview": "An ex-cop entered a prison as convicted under a false identity in order to infiltrate within a group of prisoners that has just kidnapped the teenage daughter of an important national judge.",
+        "popularity": 1246.264,
+        "poster_path": "/p1GFsUK5nCVHYNtjRxoGyfGdD9C.jpg",
+        "vote_average": 8.3,
+        "vote_count": 193
+      },
+      "movieId": 67166,
+      "id": 51
     }
   ]
 }

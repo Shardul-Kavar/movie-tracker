@@ -59,7 +59,8 @@ function Watchlist() {
   }, [currentUser]);
 
   const handleClick = (movie) => {
-    navigate("/moviepage", { state: { movie, base_url } });
+    // console.log(movie);
+    navigate(`/moviepage/${movie.id}`, { state: { movie, base_url } });
   };
 
   return (

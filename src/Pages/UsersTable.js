@@ -58,18 +58,23 @@ function UsersTable() {
           <TableCell>{u.username}</TableCell>
           <TableCell>{u.email}</TableCell>
           <TableCell>{u.mobile}</TableCell>
-          <Button
-            onClick={() => showUserWatchlist(u)}
-            variant="contained"
-            size="small"
-            style={{ marginTop: "20px" }}
-          >
-            {
-              wholeWatchlist.filter((movies) => {
-                return movies.userid === u.id;
-              }).length
-            }
-          </Button>
+          <TableCell>
+            <Button
+              style={{
+                display: "flex",
+                margin: "auto",
+              }}
+              onClick={() => showUserWatchlist(u)}
+              variant="contained"
+              size="small"
+            >
+              {
+                wholeWatchlist.filter((movies) => {
+                  return movies.userid === u.id;
+                }).length
+              }
+            </Button>
+          </TableCell>
           {isThisAdmin && (
             <TableCell>
               {u.isBlocked ? (

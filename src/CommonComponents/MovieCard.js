@@ -2,6 +2,7 @@ import { BookmarkAdd, BookmarkAdded } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import "./CCstyles/MovieCard.css";
+import { Link } from "react-router-dom";
 
 function MovieCard({
   movie,
@@ -10,31 +11,35 @@ function MovieCard({
   isLargeRow,
   bookmarkThis,
   removeBookmark,
+  fetchUrl,
   watchlist,
 }) {
   const navigate = useNavigate();
 
-  function handleClick(movie) {
-    navigate("/moviepage", { state: { movie, base_url } });
-  }
-
   return (
     <div>
       <div className="movieCard">
-        <img
-          key={movie.id}
-          onClick={() => handleClick(movie)}
-          className={`row_poster ${isLargeRow && "row_posterLarge"}`}
-          src={`${base_url}${
-            isLargeRow ? movie.poster_path : movie.backdrop_path
+        <Link
+          to={`/moviepage/${fetchUrl.indexOf("tv") > 1 ? "tv" : "movie"}/${
+            movie.id
           }`}
-          alt={
-            movie.name ||
-            movie.original_name ||
-            movie.title ||
-            movie.original_title
-          }
-        />
+          target="_blank"
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          <img
+            key={movie.id}
+            className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+            src={`${base_url}${
+              isLargeRow ? movie.poster_path : movie.backdrop_path
+            }`}
+            alt={
+              movie.name ||
+              movie.original_name ||
+              movie.title ||
+              movie.original_title
+            }
+          />
+        </Link>
         <div
           className="movieCard__textContent"
           // style={{
