@@ -23,7 +23,7 @@ function MoviesHome() {
       .then((data) => setWatchlist(data));
   }, [currentUser]);
 
-  function bookmarkThis(movie) {
+  function bookmarkThis(movie, fetchUrl) {
     fetch("http://localhost:3001/watchlist", {
       method: "POST",
       headers: {
@@ -33,6 +33,7 @@ function MoviesHome() {
         userid: currentUser.id,
         movieDetail: movie,
         movieId: movie.id,
+        url: fetchUrl,
       }),
     })
       .then((response) => response.json())

@@ -119,86 +119,6 @@
       "id": 9
     },
     {
-      "userid": 8239236,
-      "movieDetail": {
-        "title": "Eternals",
-        "video": false,
-        "vote_average": 7.3,
-        "overview": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
-        "release_date": "2021-11-03",
-        "adult": false,
-        "backdrop_path": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg",
-        "vote_count": 3139,
-        "genre_ids": [
-          28,
-          12,
-          14,
-          878
-        ],
-        "id": 524434,
-        "original_language": "en",
-        "original_title": "Eternals",
-        "poster_path": "/b6qUu00iIIkXX13szFy7d0CyNcg.jpg",
-        "popularity": 11424.242,
-        "media_type": "movie"
-      },
-      "movieId": 524434,
-      "id": 11
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "id": 438695,
-        "original_language": "en",
-        "original_title": "Sing 2",
-        "poster_path": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
-        "video": false,
-        "vote_average": 8.3,
-        "overview": "Buster and his new cast now have their sights set on debuting a new show at the Crystal Tower Theater in glamorous Redshore City. But with no connections, he and his singers must sneak into the Crystal Entertainment offices, run by the ruthless wolf mogul Jimmy Crystal, where the gang pitches the ridiculous idea of casting the lion rock legend Clay Calloway in their show. Buster must embark on a quest to find the now-isolated Clay and persuade him to return to the stage.",
-        "release_date": "2021-12-01",
-        "vote_count": 1110,
-        "adult": false,
-        "backdrop_path": "/tutaKitJJIaqZPyMz7rxrhb4Yxm.jpg",
-        "title": "Sing 2",
-        "genre_ids": [
-          16,
-          35,
-          10751,
-          10402
-        ],
-        "popularity": 5211.181,
-        "media_type": "movie"
-      },
-      "movieId": 438695,
-      "id": 21
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "original_title": "Resident Evil: Welcome to Raccoon City",
-        "poster_path": "/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",
-        "video": false,
-        "vote_average": 6.1,
-        "overview": "Once the booming home of pharmaceutical giant Umbrella Corporation, Raccoon City is now a dying Midwestern town. The company’s exodus left the city a wasteland…with great evil brewing below the surface. When that evil is unleashed, the townspeople are forever…changed…and a small group of survivors must work together to uncover the truth behind Umbrella and make it through the night.",
-        "id": 460458,
-        "title": "Resident Evil: Welcome to Raccoon City",
-        "adult": false,
-        "backdrop_path": "/o76ZDm8PS9791XiuieNB93UZcRV.jpg",
-        "vote_count": 936,
-        "genre_ids": [
-          27,
-          28,
-          878
-        ],
-        "release_date": "2021-11-24",
-        "original_language": "en",
-        "popularity": 3107.294,
-        "media_type": "movie"
-      },
-      "movieId": 460458,
-      "id": 22
-    },
-    {
       "userid": 8239238,
       "movieDetail": {
         "overview": "Plagued by strange memories, Neo's life takes an unexpected turn when he finds himself back inside the Matrix.",
@@ -223,58 +143,6 @@
       },
       "movieId": 624860,
       "id": 24
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "backdrop_path": "/qw3J9cNeLioOLoR68WX7z79aCdK.jpg",
-        "first_air_date": "2021-09-17",
-        "genre_ids": [
-          10759,
-          9648,
-          18
-        ],
-        "id": 93405,
-        "name": "Squid Game",
-        "origin_country": [
-          "KR"
-        ],
-        "original_language": "ko",
-        "original_name": "오징어 게임",
-        "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games—with high stakes. But, a tempting prize awaits the victor.",
-        "popularity": 746.707,
-        "poster_path": "/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
-        "vote_average": 7.8,
-        "vote_count": 9897
-      },
-      "movieId": 93405,
-      "id": 26
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "id": 634649,
-        "video": false,
-        "vote_average": 8.4,
-        "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
-        "release_date": "2021-12-15",
-        "vote_count": 4367,
-        "adult": false,
-        "backdrop_path": "/1Rr5SrvHxMXHu5RjKpaMba8VTzi.jpg",
-        "title": "Spider-Man: No Way Home",
-        "genre_ids": [
-          28,
-          12,
-          878
-        ],
-        "poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-        "original_language": "en",
-        "original_title": "Spider-Man: No Way Home",
-        "popularity": 5874.67,
-        "media_type": "movie"
-      },
-      "movieId": 634649,
-      "id": 27
     },
     {
       "userid": 8239239,
@@ -560,57 +428,6 @@
       "id": 39
     },
     {
-      "userid": 8239236,
-      "movieDetail": {
-        "adult": false,
-        "backdrop_path": "/voi88IfoNAykXAEd0zrnczNM8LF.jpg",
-        "genre_ids": [
-          18,
-          36,
-          10749,
-          53
-        ],
-        "id": 454527,
-        "original_language": "fr",
-        "original_title": "Benedetta",
-        "overview": "A 17th-century nun becomes entangled in a forbidden lesbian affair with a novice. But it is Benedetta's shocking religious visions that threaten to shake the Church to its core.",
-        "popularity": 187.739,
-        "poster_path": "/3N39KDnL3d6eP6sGvERPRKyQ8PJ.jpg",
-        "release_date": "2021-07-09",
-        "title": "Benedetta",
-        "video": false,
-        "vote_average": 6.7,
-        "vote_count": 310
-      },
-      "movieId": 454527,
-      "id": 41
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "backdrop_path": "/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg",
-        "first_air_date": "2017-05-02",
-        "genre_ids": [
-          80,
-          18
-        ],
-        "id": 71446,
-        "name": "Money Heist",
-        "origin_country": [
-          "ES"
-        ],
-        "original_language": "es",
-        "original_name": "La Casa de Papel",
-        "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
-        "popularity": 535.628,
-        "poster_path": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
-        "vote_average": 8.3,
-        "vote_count": 15914
-      },
-      "movieId": 71446,
-      "id": 42
-    },
-    {
       "userid": 8239240,
       "movieDetail": {
         "backdrop_path": "/rcA17r3hfHtRrk3Xs3hXrgGeSGT.jpg",
@@ -808,32 +625,169 @@
         "vote_count": 4156
       },
       "movieId": 77169,
-      "id": 50
+      "url": "/discover/tv?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&with_networks=213",
+      "id": 55
     },
     {
       "userid": 8239236,
       "movieDetail": {
-        "backdrop_path": "/2Gj7RRFnM4dWVp9p5RpN09E67PJ.jpg",
-        "first_air_date": "2016-06-02",
+        "backdrop_path": "/qw3J9cNeLioOLoR68WX7z79aCdK.jpg",
+        "first_air_date": "2021-09-17",
         "genre_ids": [
-          80,
+          10759,
+          9648,
           18
         ],
-        "id": 67166,
-        "name": "El marginal",
+        "id": 93405,
+        "name": "Squid Game",
         "origin_country": [
-          "AR"
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "오징어 게임",
+        "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games—with high stakes. But, a tempting prize awaits the victor.",
+        "popularity": 879.021,
+        "poster_path": "/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
+        "vote_average": 7.8,
+        "vote_count": 9924
+      },
+      "movieId": 93405,
+      "url": "/discover/tv?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&with_networks=213",
+      "id": 56
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "backdrop_path": "/5npLowyLY2fqUpyAOq2x0bXwwIv.jpg",
+        "first_air_date": "2022-01-05",
+        "genre_ids": [
+          18
+        ],
+        "id": 134949,
+        "name": "Rebelde",
+        "origin_country": [
+          "MX"
         ],
         "original_language": "es",
-        "original_name": "El marginal",
-        "overview": "An ex-cop entered a prison as convicted under a false identity in order to infiltrate within a group of prisoners that has just kidnapped the teenage daughter of an important national judge.",
-        "popularity": 1246.264,
-        "poster_path": "/p1GFsUK5nCVHYNtjRxoGyfGdD9C.jpg",
-        "vote_average": 8.3,
-        "vote_count": 193
+        "original_name": "Rebelde",
+        "overview": "Head back to Elite Way School as a new generation of students hope to win the Battle of the Bands.",
+        "popularity": 718.027,
+        "poster_path": "/jRlI5euugVZR6a1Ptt0nSWeiWH.jpg",
+        "vote_average": 7.4,
+        "vote_count": 143
       },
-      "movieId": 67166,
-      "id": 51
+      "movieId": 134949,
+      "url": "/discover/tv?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&with_networks=213",
+      "id": 57
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+        "id": 634649,
+        "adult": false,
+        "backdrop_path": "/1Rr5SrvHxMXHu5RjKpaMba8VTzi.jpg",
+        "title": "Spider-Man: No Way Home",
+        "genre_ids": [
+          28,
+          12,
+          878
+        ],
+        "original_language": "en",
+        "original_title": "Spider-Man: No Way Home",
+        "poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+        "vote_count": 5513,
+        "video": false,
+        "vote_average": 8.5,
+        "release_date": "2021-12-15",
+        "popularity": 8443.74,
+        "media_type": "movie"
+      },
+      "movieId": 634649,
+      "url": "/trending/all/week?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&language=en-US&rel=0",
+      "id": 58
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "vote_average": 7.3,
+        "overview": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
+        "release_date": "2021-11-03",
+        "adult": false,
+        "backdrop_path": "/k2twTjSddgLc1oFFHVibfxp2kQV.jpg",
+        "genre_ids": [
+          28,
+          12,
+          14,
+          878
+        ],
+        "vote_count": 3401,
+        "original_language": "en",
+        "title": "Eternals",
+        "original_title": "Eternals",
+        "poster_path": "/b6qUu00iIIkXX13szFy7d0CyNcg.jpg",
+        "id": 524434,
+        "video": false,
+        "popularity": 11474.647,
+        "media_type": "movie"
+      },
+      "movieId": 524434,
+      "url": "/trending/all/week?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&language=en-US&rel=0",
+      "id": 59
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "adult": false,
+        "backdrop_path": "/8jIRAV5KVZeIP6tjI1NuCfb9Il0.jpg",
+        "genre_ids": [
+          28,
+          12,
+          14
+        ],
+        "id": 566525,
+        "original_language": "en",
+        "original_title": "Shang-Chi and the Legend of the Ten Rings",
+        "overview": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+        "popularity": 2066.867,
+        "poster_path": "/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg",
+        "release_date": "2021-09-01",
+        "title": "Shang-Chi and the Legend of the Ten Rings",
+        "video": false,
+        "vote_average": 7.8,
+        "vote_count": 5294
+      },
+      "movieId": 566525,
+      "url": "/discover/movie?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&with_genres=28",
+      "id": 60
+    },
+    {
+      "userid": 8239236,
+      "movieDetail": {
+        "backdrop_path": "/ctxm191q5o3axFzQsvNPlbKoSYv.jpg",
+        "vote_count": 229,
+        "genre_ids": [
+          10759,
+          35,
+          10765
+        ],
+        "name": "Peacemaker",
+        "original_language": "en",
+        "vote_average": 8.5,
+        "poster_path": "/hE3LRZAY84fG19a18pzpkZERjTE.jpg",
+        "origin_country": [
+          "US"
+        ],
+        "id": 110492,
+        "original_name": "Peacemaker",
+        "first_air_date": "2022-01-13",
+        "overview": "The continuing story of Peacemaker – a compellingly vainglorious man who believes in peace at any cost, no matter how many people he has to kill to get it – in the aftermath of the events of “The Suicide Squad.”",
+        "popularity": 3223.755,
+        "media_type": "tv"
+      },
+      "movieId": 110492,
+      "url": "/trending/all/week?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&language=en-US&rel=0",
+      "id": 61
     }
   ]
 }

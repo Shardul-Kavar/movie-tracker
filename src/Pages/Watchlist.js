@@ -10,6 +10,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 
 function Watchlist() {
   const navigate = useNavigate();
@@ -58,11 +59,6 @@ function Watchlist() {
           .then((data) => setWatchlist(data));
   }, [currentUser]);
 
-  const handleClick = (movie) => {
-    // console.log(movie);
-    navigate(`/moviepage/${movie.id}`, { state: { movie, base_url } });
-  };
-
   return (
     <div>
       <div className="watchlist">
@@ -78,21 +74,24 @@ function Watchlist() {
             <div className="watchlist__movieCards">
               {watchlist.map((movie) => {
                 return (
-                  <Card
-                    sx={{ maxWidth: 345 }}
-                    className="watchlist__movieCard"
-                    // onClick={() => console.log(movie)}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      key={movie.id}
-                      className="watchlist__poster"
-                      src={`${base_url}${movie.movieDetail.poster_path}`}
-                      alt={movie.movieDetail.name}
-                      onClick={() => handleClick(movie.movieDetail)}
-                      style={{ cursor: "pointer" }}
-                    />
+                  <Card sx={{ maxWidth: 345 }} className="watchlist__movieCard">
+                    <Link
+                      to={`/moviepage/${
+                        movie.url.indexOf("tv") > 1 ? "tv" : "movie"
+                      }/${movie.movieId}`}
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <CardMedia
+                        component="img"
+                        height="140"
+                        key={movie.id}
+                        className="watchlist__poster"
+                        src={`${base_url}${movie.movieDetail.poster_path}`}
+                        alt={movie.movieDetail.name}
+                        style={{ cursor: "pointer" }}
+                      />
+                    </Link>
                     <div>
                       <CardContent className="watchlist__movieCard__textContent">
                         <Typography gutterBottom variant="h5" component="div">

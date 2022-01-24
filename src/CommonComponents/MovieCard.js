@@ -40,16 +40,7 @@ function MovieCard({
             }
           />
         </Link>
-        <div
-          className="movieCard__textContent"
-          // style={{
-          //   display: "flex",
-          //   justifyContent: "space-evenly",
-          //   alignItems: "center",
-          //   margin: "0",
-          //   padding: "0",
-          // }}
-        >
+        <div className="movieCard__textContent">
           <p>
             {movie.name ||
               movie.original_name ||
@@ -67,13 +58,13 @@ function MovieCard({
             ) : (
               <BookmarkAdd
                 style={{ cursor: "pointer" }}
-                onClick={() => bookmarkThis(movie)}
+                onClick={() => bookmarkThis(movie, fetchUrl)}
               />
             )
           ) : (
             <BookmarkAdd
               style={{ cursor: "pointer" }}
-              onClick={() => bookmarkThis(movie)}
+              onClick={() => bookmarkThis(movie, fetchUrl)}
             />
           )}
         </div>
