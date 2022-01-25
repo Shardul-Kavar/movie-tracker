@@ -5,7 +5,8 @@ import Card from "@mui/material/Card";
 import Nav from "../CommonComponents/Nav";
 // import Footer from "./CommonComponents/Footer";
 import Sidebar from "../CommonComponents/Sidebar";
-import UsersTable from "./UsersTable";
+// import UsersTable from "./UsersTable";
+import UsersTable from "./UsersTable2copy";
 import "./PagesStyles/UsersShow.css";
 
 function UsersShow() {

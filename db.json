@@ -760,34 +760,6 @@
       "movieId": 566525,
       "url": "/discover/movie?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&with_genres=28",
       "id": 60
-    },
-    {
-      "userid": 8239236,
-      "movieDetail": {
-        "backdrop_path": "/ctxm191q5o3axFzQsvNPlbKoSYv.jpg",
-        "vote_count": 229,
-        "genre_ids": [
-          10759,
-          35,
-          10765
-        ],
-        "name": "Peacemaker",
-        "original_language": "en",
-        "vote_average": 8.5,
-        "poster_path": "/hE3LRZAY84fG19a18pzpkZERjTE.jpg",
-        "origin_country": [
-          "US"
-        ],
-        "id": 110492,
-        "original_name": "Peacemaker",
-        "first_air_date": "2022-01-13",
-        "overview": "The continuing story of Peacemaker – a compellingly vainglorious man who believes in peace at any cost, no matter how many people he has to kill to get it – in the aftermath of the events of “The Suicide Squad.”",
-        "popularity": 3223.755,
-        "media_type": "tv"
-      },
-      "movieId": 110492,
-      "url": "/trending/all/week?api_key=ed03bffe513a5d137b3a0965c3b0d9c0&language=en-US&rel=0",
-      "id": 61
     }
   ]
 }
